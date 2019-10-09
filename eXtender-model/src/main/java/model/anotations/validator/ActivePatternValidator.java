@@ -5,11 +5,11 @@
  *
  */
 
-package core.anotations.validator;
+package model.anotations.validator;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-import core.anotations.ActivePattern;
+import model.anotations.ActivePattern;
 
 /**
  * 

@@ -1,20 +1,20 @@
 /**
- * OnDelete.java
+ * OnFindId.java
  * Created on 9 de out de 2019
  * 
  *
  */
 
-package core.interfaces;
+package model.interfaces;
 
 /**
  * 
- * Description the class  OnDelete.java 
+ * Description the class  OnFindId.java 
  *
  * @Autor daniela.conceicao 
  * @since
  * @version  %I%, %G% 
  */
-public interface OnDelete {
+public interface OnFindId {
 
 }

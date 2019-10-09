@@ -5,7 +5,7 @@
  *
  */
 
-package core.anotations;
+package model.anotations;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -15,7 +15,7 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 
-import core.anotations.validator.DateNotNullValidator;
+import model.anotations.validator.DateNotNullValidator;
 
 /**
  * 

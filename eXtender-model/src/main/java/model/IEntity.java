@@ -5,7 +5,7 @@
  *
  */
 
-package core;
+package model;
 
 /**
  * 

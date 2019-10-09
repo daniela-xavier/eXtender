@@ -5,12 +5,12 @@
  *
  */
 
-package core.anotations.validator;
+package model.anotations.validator;
 import java.util.Date;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-import core.anotations.DateNotNull;
+import model.anotations.DateNotNull;
 /**
  * 
  * Description the class  DateNotNullValidator.java 

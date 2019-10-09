@@ -5,7 +5,7 @@
  *
  */
 
-package core;
+package model;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -17,9 +17,9 @@ import javax.persistence.Transient;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
-import core.anotations.ActivePattern;
-import core.interfaces.OnSave;
-import core.interfaces.OnUpdate;
+import model.anotations.ActivePattern;
+import model.interfaces.OnSave;
+import model.interfaces.OnUpdate;
 
 /**
  * 

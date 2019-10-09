@@ -5,7 +5,7 @@
  *
  */
 
-package core.anotations;
+package model.anotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

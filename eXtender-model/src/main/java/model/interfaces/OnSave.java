@@ -1,20 +1,20 @@
 /**
- * OnFindFilter.java
+ * OnSave.java
  * Created on 9 de out de 2019
  * 
  *
  */
 
-package core.interfaces;
+package model.interfaces;
 
 /**
  * 
- * Description the class  OnFindFilter.java 
+ * Description the class  OnSave.java 
  *
  * @Autor daniela.conceicao 
  * @since
  * @version  %I%, %G% 
  */
-public interface OnFindFilter {
+public interface OnSave {
 
 }
