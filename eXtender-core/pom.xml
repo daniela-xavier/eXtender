@@ -16,4 +16,11 @@
 
 	<name>Modulo Core do projeto eXtender</name>
 
+	<dependencies>
+		<dependency>
+			<groupId>br.com.extender</groupId>
+			<artifactId>extender-model</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 </project>
