@@ -7,6 +7,8 @@
 
 package core;
 
+import org.springframework.stereotype.Component;
+
 import core.application.Result;
 import model.DomainEntity;
 

@@ -11,6 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.stereotype.Component;
+
 import core.IFacade;
 import core.IService;
 import core.IStrategy;
