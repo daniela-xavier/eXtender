@@ -16,4 +16,18 @@
 
 	<name>Modulo View do projeto eXtender</name>
 
+	<dependencies>
+		<dependency>
+			<groupId>br.com.extender</groupId>
+			<artifactId>extender-model</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.extender</groupId>
+			<artifactId>extender-core</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
 </project>

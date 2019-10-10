@@ -11,6 +11,7 @@ import com.google.gson.annotations.Expose;
 
 import model.DomainEntity;
 
+
 /**
  * 
  * Description the class Result.java
@@ -48,7 +49,7 @@ public class Result {
 	 *
 	 * @return valor do campo entity
 	 */
-	private Iterable<DomainEntity> getEntity() {
+	public Iterable<DomainEntity> getEntity() {
 		return entity;
 	}
 
@@ -67,7 +68,7 @@ public class Result {
 	 *
 	 * @return error (true - contém erro ou false - não contém erro.)
 	 */
-	private boolean hasError() {
+	public boolean hasError() {
 		return this.error;
 	}
 
@@ -77,4 +78,13 @@ public class Result {
 	private void setError() {
 		this.error = true;
 	}
+	
+	 /**
+     * Método de recuperação do campo message
+     *
+     * @return valor do campo message
+     */
+    public String getMessage() {
+        return message;
+    }
 }

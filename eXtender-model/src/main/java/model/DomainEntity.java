@@ -9,6 +9,7 @@ package model;
 
 import java.io.Serializable;
 import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Temporal;
@@ -68,15 +69,65 @@ public class DomainEntity implements IEntity, Serializable {
     @Transient
     @Expose
     private String tk;
+       
     
+    
+    public DomainEntity() {		
+	}
+
+	/**
+     * Método para alteração de includedIn e changedBy entidade.
+     * @param includedIn
+     * @param changedBy
+     */    
+    
+    public void includedDomainEntity(@NotNull(message = "Data de alteração inválida", groups = OnUpdate.class) Date includedIn,
+			@NotEmpty(message = "Usuário de alteração inválido", groups = OnUpdate.class) String includedBy) {		
+		
+    	if (this.includedBy.isEmpty()) {
+    		this.includedBy = includedBy;
+		} 
+
+		if (this.includedIn == null) {
+			this.includedIn = includedIn;
+		}    	
+		
+	}
     
     /**
-     * Inclui o ativo = n, para desativar a entidade.
+     * Método para adicionar de changedIn e changedBy entidade.
+     * @param changedIn
+     * @param changedBy
+     */    
+    
+    public void chancedDomainEntity(@NotNull(message = "Data de alteração inválida", groups = OnUpdate.class) Date changedIn,
+			@NotEmpty(message = "Usuário de alteração inválido", groups = OnUpdate.class) String changedBy) {		
+		
+    	if (this.changedBy.isEmpty()) {
+    		this.changedBy = changedBy;
+		} 
+
+		if (this.changedIn == null) {
+			this.changedIn = changedIn;
+		}    	
+		
+	}
+
+	/**
+	 * 
+     * Inclui o ativo = N, para desativar a entidade.
      */
     public void desativarDomainEntity() {
     	this.active ="N";
     }
 
-
+    /**
+     * Inclui o ativo = S, para sativar a entidade.
+     */
+    public void ativarDomainEntity() {
+    	this.active ="S";
+    }
+    
+    
 
 }

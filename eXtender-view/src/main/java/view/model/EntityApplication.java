@@ -5,7 +5,7 @@
  *
  */
 
-package core.application;
+package view.model;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,8 +24,7 @@ public class EntityApplication {
      * @param clazz
      * @return Logger
      */
-    public Logger getLogger(Class<?> clazz) {    	
-    	//Logger logger = getLogger(clazz.getName());
-        return LoggerFactory.getLogger(clazz);
+    public Logger getLogger(Class<?> clazz) {  	
+        return LoggerFactory.getLogger(clazz.getName());
     }
 }

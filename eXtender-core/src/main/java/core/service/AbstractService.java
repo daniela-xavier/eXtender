@@ -5,7 +5,7 @@
  *
  */
 
-package core.service.impl;
+package core.service;
 
 import model.anotations.ADomainEntity;
 

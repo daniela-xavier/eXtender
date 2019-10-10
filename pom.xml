@@ -58,6 +58,12 @@
 			<version>2.3.1</version>
 		</dependency>
 
+		<!-- Dependências do modulo View -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>5.1.5.RELEASE</version>
+		</dependency>
 
 		<!--Dependências do modulo Core -->
 		<dependency>
