@@ -19,9 +19,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<url.repository>http://172.16.20.8:7080</url.repository>
-		<name.repository>repository/extender</name.repository>
 	</properties>
+
 	<build>
 		<testResources>
 			<testResource>
@@ -101,17 +100,21 @@
 
 	</dependencies>
 
+	<repositories>
+		<repository>
+			<id>myMavenRepo</id>
+			<url>${myMavenRepoReadUrl}</url>
+		</repository>
+	</repositories>
 
 	<distributionManagement>
 		<repository>
-			<id>releases</id>
-			<name>Releases</name>
-			<url>${url.repository}/${name.repository}-release/</url>
+			<id>myMavenRepo</id>
+			<url>${myMavenRepoWriteUrl}</url>
 		</repository>
 		<snapshotRepository>
-			<id>snapshots</id>
-			<name>Snapshots</name>
-			<url>${url.repository}/${name.repository}-snapshot/</url>
+			<id>myMavenRepo</id>
+			<url>${myMavenRepoWriteUrl}</url>
 		</snapshotRepository>
 	</distributionManagement>
 
